@@ -30,7 +30,7 @@ mongoose
   .connect(url)
   .then(() => {
     console.log("Conectado ao MongoDB!");
-    app.listen(3000);
+    app.listen(); //3000
   })
   .catch((error) => {
     console.log("Erro ao conectar ao MongoDB");
